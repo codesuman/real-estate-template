@@ -1,0 +1,12 @@
+.features-section {
+    /* background-color: #9b5136 !important; */
+    /* background-color: #ed212f !important; */
+    background-color: #fff !important;
+}
+
+.custom-bullet li {
+    padding-left: 15px;
+    background: url("../../../images/arrow-right.png") no-repeat;
+    background-position: left 5px;
+    margin-bottom: 8px;
+}

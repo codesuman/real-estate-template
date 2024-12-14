@@ -1,0 +1,104 @@
+import React from 'react';
+import './ProjectFeaturesSection.css'
+
+const ProjectFeaturesDualSection = () => {
+  return (
+    // <section id="project-features" class="container my-5">
+    <section class="pt-30 pb-20 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 overflow-hidden features-section">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="row mt-30">
+                  <div class="col-lg-7 align-self-center wow flipInX" style={{visibility: 'visible', animationName: 'flipInX'}}>
+                    <img src="images/gallery4.jpg" alt="" class="w-100 mb-40" />
+                  </div>
+                  <div class="col-lg-5 fadeIn wow fadeInDown" style={{visibility: 'visible', animationName: 'fadeInDown'}}>
+                    <h4 class="mont-reg mt-10 fs-28 fs-xs-20 fs-sm-20 mb-30 mb-xs-10 mb-sm-10 text-uppercase">
+                      <b>Project Features</b>
+                    </h4>
+                    <ul class="list-unstyled custom-bullet Museo-normal fs-16 fs-xs-14 fs-sm-14">
+                      <li class="color-white">Large Living Balconies</li>
+                      <li class="color-white">74% Open Space</li>
+                      <li class="color-white">15 Mins from BIAL</li>
+                      <li class="color-white">25+ Indoor &amp; Outdoor Amenities</li>
+                      <li class="color-white">2.5 Acres of Amenities and a Clubhouse </li>
+                      <li class="color-white">
+                        50,000 SQFT Integrated Retail Space
+                      </li>
+                    </ul>
+                    <div class="mt-20 mb-40">
+                      <a data-toggle="modal" data-target="#myModal" class="scroll mont-reg">
+                        <button type="submit" class="submit-btn btn btn-primary text-uppercase req-brochure">
+                          <strong>Request Brochure</strong>
+                        </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* RHS: Campsite Configuration Table */}
+        
+        <div class="col-lg-6 col-md-12">
+          <h4 class="mont-reg mt-10 fs-28 fs-xs-20 fs-sm-20 mb-30 mb-xs-10 mb-sm-10 text-uppercase">
+            <b>Campsite Configuration</b>
+          </h4>
+          <table class="table config-table mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <thead>
+              <tr class="config-table-row">
+                  <th class="config-table-header">TYPE</th>
+                  <th class="config-table-header">AREA</th>
+                  <th class="config-table-header"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="config-table-row">
+                  <td class="cairobold pdtable">THRILL</td>
+                  <td class="cairobold pdtable">1,500 SQ. FT.</td>
+                  <td class="pdtable">
+                      <a href="javascript:void (0);" class="price-click">
+                          Know More
+                      </a>
+                  </td>
+              </tr>
+              <tr class="config-table-row">
+                  <td class="cairobold pdtable">EUPHORIA</td>
+                  <td class="cairobold pdtable">2,400 SQ. FT.</td>
+                  <td class="pdtable">
+                      <a href="javascript:void (0);" class="price-click">
+                          Know More
+                      </a>
+                  </td>
+              </tr>
+              <tr class="config-table-row">
+                  <td class="cairobold pdtable">THRILL</td>
+                  <td class="cairobold pdtable">1,500 SQ. FT.</td>
+                  <td class="pdtable">
+                      <a href="javascript:void (0);" class="text-decoration-none text-dark">
+                          SOLD OUT
+                      </a>
+                  </td>
+              </tr>
+              <tr class="config-table-row">
+                  <td class="cairobold pdtable">ADRENALINE</td>
+                  <td class="cairobold pdtable">OTHER SIZES </td>
+                  <td class="pdtable">
+                      <a href="javascript:void (0);" class="price-click">
+                          Know More
+                      </a>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  );
+};
+
+export default ProjectFeaturesDualSection;

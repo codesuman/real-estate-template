@@ -1,0 +1,23 @@
+.amenities-section {
+    background-attachment: fixed;
+    background-image: url("../../../images/HD Pool view.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.amenities-section-overlay {
+    width: 100%;
+    height: auto;
+    float: none;
+    background-color: rgba(255, 255, 255, 10);
+    margin-top: 20px !important;
+    padding-bottom: 0px !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
