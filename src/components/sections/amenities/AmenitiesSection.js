@@ -3,7 +3,7 @@ import './AmenitiesSection.css';
 
 const AmenitiesSection = () => {
   return (
-    <section class="amenities-section">
+    <section class="pt-30 pb-20 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 amenities-section">
       <div class="container">
         <div class="row">
           <div class="col-12 pt-20 pb-20 amenities-section-overlay mt-20 wow fadeIn">
