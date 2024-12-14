@@ -25,12 +25,13 @@ const ProjectFeaturesSection = () => {
                     50,000 SQFT Integrated Retail Space
                   </li>
                 </ul>
-                <div class="mt-20 mb-40">
-                  <a data-toggle="modal" data-target="#myModal" class="scroll mont-reg">
+                {/* <div class="mt-20 mb-40">
+                  <a data-toggle="modal" data-target="#myModal" class="scroll mont-reg"> */}
                     <button type="submit" class="submit-btn btn btn-primary text-uppercase req-brochure">
                       <strong>Request Brochure</strong>
-                    </button></a>
-                </div>
+                    </button>
+                  {/* </a>
+                </div> */}
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import './ConfigurationSection.css'
 // https://codepen.io/sdhnik/pen/JdVaow
 const ConfigurationSection = () => {
   return (
-    <section class="pt-30 pb-20 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 overflow-hidden features-section">
+    <section class="pt-10 pb-20 pt-xs-10 pb-xs-20 pt-sm-10 pb-sm-20 overflow-hidden config-section">
       <div class="container">
         <div class="row">
           <div class="col-12">

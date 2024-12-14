@@ -2,7 +2,6 @@ import React from "react";
 
 import HeroSlider from "../components/sections/hero/HeroSlider";
 import ProjectFeaturesSection from "../components/sections/project-features/ProjectFeaturesSection";
-import ConfigurationSectionOld from "../components/sections/configuration/ConfigurationSectionOld";
 import ConfigurationSection from "../components/sections/configuration/ConfigurationSection";
 import AmenitiesSection from "../components/sections/amenities/AmenitiesSection";
 import FooterSection from "../components/sections/footer/FooterSection";
@@ -20,7 +19,6 @@ const RealEstatePage = () => {
 
       {/* Configuration Section */}
       <ConfigurationSection />
-      <ConfigurationSectionOld />
       
       {/* Amenities Section */}
       <AmenitiesSection />

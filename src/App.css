@@ -150,8 +150,8 @@
   width: auto;
   border: 1px solid #fff !important;
   cursor: pointer;
-  /* background-color: #ed212f !important; */
-  background-color: #fff !important;
+  background-color: #ed212f !important;
+  /* background-color: #fff !important; */
   color: #fff !important;
   font-weight: bold;
 }
