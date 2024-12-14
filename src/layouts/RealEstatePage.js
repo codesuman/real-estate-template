@@ -7,8 +7,6 @@ import ConfigurationSection from "../components/sections/configuration/Configura
 import AmenitiesSection from "../components/sections/amenities/AmenitiesSection";
 import FooterSection from "../components/sections/footer/FooterSection";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const RealEstatePage = () => {
   return (
     <div className="font-sans">
@@ -20,7 +18,6 @@ const RealEstatePage = () => {
 
       {/* Configuration Section */}
       <ConfigurationSection />
-      <ConfigurationSectionOld />
       
       {/* Amenities Section */}
       <AmenitiesSection />

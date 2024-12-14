@@ -15,11 +15,9 @@ button, select, input {
   font-size: 17px;
 }
 .quiz-window {
-  position: relative;
   left:0; right:0;
   top: 50px;
   margin: auto;
-  width: 600px;
   border-radius: 4px;
   background: #fff;
   overflow: hidden;
