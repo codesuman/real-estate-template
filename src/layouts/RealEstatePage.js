@@ -40,10 +40,13 @@ const RealEstatePage = () => {
             <div className="modal-dialog modal-lg">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title">Request Brochure</h5>
+                  <h5 className="modal-title">Nikoo Homes</h5>
                   <button type="button" className="btn-close" onClick={handleCloseModal}></button>
                 </div>
                 <div className="modal-body">
+                  <h5 class="text-center fs-12">
+                    <b> Request More Details Now</b>
+                  </h5>
                   <RequestBrochureForm onClose={handleCloseModal} />
                 </div>
               </div>
