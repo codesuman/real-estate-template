@@ -156,6 +156,26 @@
   font-weight: bold;
 }
 
+.sticky-bottom-btn {
+  position: fixed;
+  bottom: 0; /* Align to the absolute bottom of the viewport */
+  left: 0; /* Start from the left edge */
+  width: 100%; /* Take the full width of the screen */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #ed212f !important;
+  color: #fff !important; /* Text color */
+  font-weight: bold;
+  padding: 15px; /* Adjust padding for a better look */
+  font-size: 16px; /* Text size */
+  text-align: center; /* Center-align the text */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor for hover effect */
+}
+
+.sticky-bottom-btn:hover {
+  background-color: #d12b29; /* Darker shade on hover */
+}
+
 /**
  * All Margins & Paddings
  */
