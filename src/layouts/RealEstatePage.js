@@ -8,9 +8,23 @@ import FooterSection from "../components/sections/footer/FooterSection";
 
 import RequestBrochureForm from "../components/forms/RequestBrochureForm";
 
+import useMediaQuery from "../util/UseMediaQuery";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const RealEstatePage = () => {
+  const slidesForDesktop = [
+    { path: "/images/Offer-LP-05.jpg", name: "Offer Slide 1" },
+    { path: "/images/LP-03.jpg", name: "Offer Slide 2" }
+  ];
+
+  const slidesForMobile = [
+    { path: "/images/Offer-LP-06.jpg", name: "Offer Slide 1" },
+    { path: "/images/LP-04.jpg", name: "Offer Slide 2" }
+  ];
+
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => setShowModal(true);
@@ -19,7 +33,12 @@ const RealEstatePage = () => {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <HeroSlider />
+      {/* Conditionally Render HeroSlider */}
+      {isMobile ? (
+        <HeroSlider slides={slidesForMobile} />
+      ) : (
+        <HeroSlider slides={slidesForDesktop} />
+      )}
 
       {/* Project Features Section */}
       <ProjectFeaturesSection onRequestBrochure={handleOpenModal}/>
@@ -32,6 +51,16 @@ const RealEstatePage = () => {
       
       {/* Footer Section */}
       <FooterSection />
+
+      {/* Sticky Button for Mobile View */}
+      {isMobile && (
+        <button
+          className="text-uppercase  sticky-bottom-btn"
+          onClick={handleOpenModal}
+        >
+          Enquire Now
+        </button>
+      )}
 
       {/* Modal */}
       {showModal && (
