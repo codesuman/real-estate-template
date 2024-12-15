@@ -21,12 +21,16 @@ const HeroSlider = () => {
         pagination={{ clickable: true }}
         className="swiper-container"
       >
-        <SwiperSlide>
-          <img src="/images/Offer-LP-05.jpg" alt="Offer Slide 1" className="d-block w-100" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/images/LP-03.jpg" alt="Offer Slide 2" className="d-block w-100" />
-        </SwiperSlide>
+        {[
+          { path: "/images/Offer-LP-05.jpg", name: "Offer Slide 1" },
+          { path: "/images/LP-03.jpg", name: "Offer Slide 2" },
+          { path: "/images/Offer-LP-05.jpg", name: "Offer Slide 1" },
+          { path: "/images/LP-03.jpg", name: "Offer Slide 2" }
+        ].map((banner) => (
+          <SwiperSlide>
+            <img src={banner.path} alt={banner.name} className="d-block w-100" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
