@@ -9,10 +9,6 @@ const ConfigurationSection = () => {
         <div class="row">
           <div class="col-12">
           <div class="quiz-window">
-              {/* <div class="quiz-window-header">
-                <div class="quiz-window-title">Your Awards</div>
-                <button class="quiz-window-close">&times;</button>
-              </div> */}
               <div class="quiz-window-body">
                 <div class="gui-window-awards">
                   <ul class="guiz-awards-row guiz-awards-header">
@@ -68,7 +64,6 @@ const ConfigurationSection = () => {
                     <li class="guiz-awards-time"><span class="null">Sold Out</span></li>
                   </ul>
                 </div>
-                {/* <div class="guiz-awards-buttons"><button class="guiz-awards-but-back"><i class="fa fa-angle-left"></i> Back</button></div> */}
               </div>
             </div>
           </div>
