@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectFeaturesSection.css'
 
-const ProjectFeaturesSection = () => {
+const ProjectFeaturesSection = ({ onRequestBrochure }) => {
   return (
     <section class="pt-30 pb-20 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 overflow-hidden features-section">
       <div class="container">
@@ -27,7 +27,7 @@ const ProjectFeaturesSection = () => {
                 </ul>
                 {/* <div class="mt-20 mb-40">
                   <a data-toggle="modal" data-target="#myModal" class="scroll mont-reg"> */}
-                    <button type="submit" class="submit-btn btn btn-primary text-uppercase req-brochure">
+                    <button onClick={onRequestBrochure} class="submit-btn btn btn-primary text-uppercase req-brochure">
                       <strong>Request Brochure</strong>
                     </button>
                   {/* </a>
