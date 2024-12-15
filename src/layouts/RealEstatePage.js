@@ -45,7 +45,7 @@ const RealEstatePage = () => {
                 </div>
                 <div className="modal-body">
                   <h5 class="text-center fs-12">
-                    <b> Request More Details Now</b>
+                    Request More Details Now
                   </h5>
                   <RequestBrochureForm onClose={handleCloseModal} />
                 </div>
