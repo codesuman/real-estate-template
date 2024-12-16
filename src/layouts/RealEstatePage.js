@@ -5,6 +5,7 @@ import ProjectFeaturesSection from "../components/sections/project-features/Proj
 import ConfigurationSection from "../components/sections/configuration/ConfigurationSection";
 import AmenitiesSection from "../components/sections/amenities/AmenitiesSection";
 import LocationSection from "../components/sections/location/LocationSection";
+
 import FooterSection from "../components/sections/footer/FooterSection";
 
 import RequestBrochureForm from "../components/forms/RequestBrochureForm";
@@ -51,7 +52,7 @@ const RealEstatePage = () => {
 
       {/* Location Section */}
       <LocationSection onRequestBrochure={handleOpenModal}/>
-      
+
       {/* Footer Section */}
       <FooterSection />
 

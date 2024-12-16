@@ -16,7 +16,7 @@ const ProjectFeaturesSection = ({ onRequestBrochure }) => {
                   <b>Project Features</b>
                 </h4>
                 <ul class="list-unstyled custom-bullet Museo-normal fs-16 fs-xs-14 fs-sm-14">
-                  <li class="color-white"><i class="fa-duotone fa-solid fa-caret-right"></i>Large Living Balconies</li>
+                  <li class="color-white">Large Living Balconies</li>
                   <li class="color-white">74% Open Space</li>
                   <li class="color-white">15 Mins from BIAL</li>
                   <li class="color-white">25+ Indoor &amp; Outdoor Amenities</li>

@@ -1,7 +1,53 @@
 import React from "react";
 import './LocationSection.css'
 
+class LocationCategory {
+    constructor(name, locations) {
+        this.name = name;
+        this.locations = locations;
+    }
+}
+
+class Location {
+    constructor(name, distance) {
+        this.name = name;
+        this.distance = distance;
+    }
+}
+
 const LocationSection = ({ onRequestBrochure }) => {
+    const locationCategories = [
+        new LocationCategory("Schools", 
+            [
+                new Location("Delhi Public School", "14 mins"),
+                new Location("Canadian International School", "20 mins"),
+                new Location("Stonehill International School", "14 mins"),
+            ]
+        ),
+        new LocationCategory("Hospital", 
+            [
+                new Location("Manipal Hospital", "29 mins")
+            ]
+        ),
+        new LocationCategory("Restaurants", 
+            [
+                new Location("OIA", "15 mins"),
+                new Location("Byg Brewski", "15 mins"),
+                new Location("Farmlore", "15 mins"),
+            ]
+        ),
+        new LocationCategory("Airports", 
+            [
+                new Location("International Airport", "15 mins"),
+            ]
+        ),
+        new LocationCategory("Mall", 
+            [
+                new Location("Phoenix Mall of Asia", "25 mins"),
+            ]
+        ),
+    ];
+
   return (
     <section class="pt-50 pb-0 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 overflow-hidden">
         <div class="container">
@@ -25,148 +71,91 @@ const LocationSection = ({ onRequestBrochure }) => {
                         </p>
                         </div>
                         <div class="col-lg-5 fadeIn wow fadeInDown location-nearby">
-                        <div class="bs-example mb-xs-20 mb-sm-20">
-                            <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button type="button" class="btn btn-link open-sans acc-btn" data-toggle="collapse" data-target="#collapseOne">
-                                    Schools<i class="fa fa-minus"></i>
-                                    </button>
-                                </h2>
+                            <div class="bs-example mb-xs-20 mb-sm-20">
+                                <div class="accordion" id="accordionExample">
+                                    {
+                                        locationCategories.map((locationCategory, index) => (
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button 
+                                                        class="accordion-button" 
+                                                        type="button" 
+                                                        data-bs-toggle="collapse" 
+                                                        data-bs-target={`#collapse${locationCategory.name}`}
+                                                        aria-expanded={index === 0} // Set true for the first item
+                                                        aria-controls={`collapse${locationCategory.name}`}>
+                                                        {locationCategory.name}
+                                                    </button>
+                                                </h2>
+                                                <div id={`collapse${locationCategory.name}`} className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`} data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            {
+                                                                locationCategory.locations.map((location) => (
+                                                                    <li>
+                                                                        {location.name}
+                                                                        <span class="float-right">{location.distance}</span>
+                                                                    </li>
+                                                                ))
+                                                            }
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
                                 </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <ul class="">
-                                    <li>
-                                        Delhi Public School
-                                        <span class="float-right">14 mins</span>
-                                    </li>
-                                    <li>
-                                        Canadian International School<span class="float-right">20 mins</span>
-                                    </li>
-                                    <li>
-                                        Stonehill International School
-                                        <span class="float-right">23 mins</span>
-                                    </li>
-                                    
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button type="button" class="btn btn-link collapsed open-sans acc-btn" data-toggle="collapse" data-target="#collapseTwo">
-                                    Hospital
 
-                                    <i class="fa fa-plus"></i>
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <ul class="fs-14">
-                                    <li>
-                                        Manipal Hospital<span class="float-right">29 mins</span>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
 
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button type="button" class="btn btn-link collapsed open-sans acc-btn" data-toggle="collapse" data-target="#Leisure">
-                                    Restaurants<i class="fa fa-plus"></i>
+{/* <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div> */}
+
+
+                            </div>
+                            <div class="text-center mt-20">
+                                <a data-toggle="modal" data-target="#myModal" class="scroll mont-reg">
+                                    <button onClick={onRequestBrochure} class="submit-btn btn btn-primary text-uppercase req-brochure">
+                                        <strong>Request Brochure</strong>
                                     </button>
-                                </h2>
-                                </div>
-                                <div id="Leisure" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <ul class="fs-14">
-                                    <li>
-                                        OIA<span class="float-right">15 mins</span>
-                                    </li>
-                                    <li>
-                                        Byg Brewski
-                                        <span class="float-right">15 mins</span>
-                                    </li>
-                                    <li>
-                                        Farmlore
-                                        <span class="float-right">15 mins</span>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button type="button" class="btn btn-link collapsed open-sans acc-btn" data-toggle="collapse" data-target="#Leisure1">
-                                    IT Parks<i class="fa fa-plus"></i>
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="Leisure1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <ul class="fs-14">
-                                    <li>
-                                        Devanahalli Business Park<span class="float-right">20 mins</span>
-                                    </li>
-                                    <li>
-                                        Manyata Tech Park<span class="float-right">30 mins</span>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button type="button" class="btn btn-link collapsed open-sans acc-btn" data-toggle="collapse" data-target="#airport">
-                                    Airport<i class="fa fa-plus"></i>
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="airport" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <ul class="fs-14">
-                                    <li>
-                                        International Airport<span class="float-right">15 mins</span>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button type="button" class="btn btn-link collapsed open-sans acc-btn" data-toggle="collapse" data-target="#mall">
-                                    Mall<i class="fa fa-plus"></i>
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="mall" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <ul class="fs-14">
-                                    <li>
-                                        Phoenix Mall of Asia<span class="float-right">26 mins</span>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-20">
-                            <a data-toggle="modal" data-target="#myModal" class="scroll mont-reg">
-                                <button onClick={onRequestBrochure} class="submit-btn btn btn-primary text-uppercase req-brochure">
-                                    <strong>Request Brochure</strong>
-                                </button>
-                            </a>
-                        </div>
                         </div>
                     </div>
                 </div>
