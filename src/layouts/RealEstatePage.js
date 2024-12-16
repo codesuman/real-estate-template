@@ -4,13 +4,13 @@ import HeroSlider from "../components/sections/hero/HeroSlider";
 import ProjectFeaturesSection from "../components/sections/project-features/ProjectFeaturesSection";
 import ConfigurationSection from "../components/sections/configuration/ConfigurationSection";
 import AmenitiesSection from "../components/sections/amenities/AmenitiesSection";
+import LocationSection from "../components/sections/location/LocationSection";
 import FooterSection from "../components/sections/footer/FooterSection";
 
 import RequestBrochureForm from "../components/forms/RequestBrochureForm";
 
 import useMediaQuery from "../util/UseMediaQuery";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const RealEstatePage = () => {
   const slidesForDesktop = [
@@ -48,6 +48,9 @@ const RealEstatePage = () => {
       
       {/* Amenities Section */}
       <AmenitiesSection />
+
+      {/* Location Section */}
+      <LocationSection onRequestBrochure={handleOpenModal}/>
       
       {/* Footer Section */}
       <FooterSection />
