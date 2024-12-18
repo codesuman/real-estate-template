@@ -36,16 +36,17 @@
 
 .guiz-awards-title {
   flex: 1 1 40%; /* Flexible width for title */
+  font-size: 12px;
 }
 
 .guiz-awards-track, .guiz-awards-time {
   flex: 0 0 20%; /* Fixed width for area and action */
-  font-size: 16px;
+  font-size: 10px;
 }
 
 .guiz-awards-subtitle {
   color: #858585;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 /* Star Icon Adjustments */
@@ -99,7 +100,7 @@
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
   .guiz-awards-row {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items horizontal */
     text-align: left;
   }
 
@@ -128,4 +129,7 @@
   .guiz-awards-track, .guiz-awards-time {
     font-size: 14px; /* Smaller text */
   }
+}
+.submit-btn btn req-brochure{
+    background-color: ed323a;
 }

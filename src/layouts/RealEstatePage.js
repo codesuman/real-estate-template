@@ -13,6 +13,7 @@ import RequestBrochureForm from "../components/forms/RequestBrochureForm";
 import useMediaQuery from "../util/UseMediaQuery";
 
 
+
 const RealEstatePage = () => {
   const slidesForDesktop = [
     { path: "/images/Offer-LP-05.jpg", name: "Offer Slide 1" },
@@ -25,6 +26,7 @@ const RealEstatePage = () => {
   ];
 
   const isMobile = useMediaQuery("(max-width: 768px)");
+  
 
   const [showModal, setShowModal] = useState(false);
 
@@ -32,7 +34,9 @@ const RealEstatePage = () => {
   const handleCloseModal = () => setShowModal(false);
 
   return (
+    
     <div className="font-sans">
+
       {/* Hero Section */}
       {/* Conditionally Render HeroSlider */}
       {isMobile ? (
@@ -41,11 +45,12 @@ const RealEstatePage = () => {
         <HeroSlider slides={slidesForDesktop} />
       )}
 
+
       {/* Project Features Section */}
       <ProjectFeaturesSection onRequestBrochure={handleOpenModal}/>
 
       {/* Configuration Section */}
-      <ConfigurationSection />
+      <ConfigurationSection onRequestBrochure={handleOpenModal}/>
       
       {/* Amenities Section */}
       <AmenitiesSection />
@@ -59,7 +64,7 @@ const RealEstatePage = () => {
       {/* Sticky Button for Mobile View */}
       {isMobile && (
         <button
-          className="text-uppercase  sticky-bottom-btn"
+          className="text-uppercase  sticky-bottom-btn btn style={{background : 'ed323a'}}"
           onClick={handleOpenModal}
         >
           Enquire Now
