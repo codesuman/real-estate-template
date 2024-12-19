@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MasterPlan.css';
 
 const MasterPlanSection = () => {
+
+    // State to track the active section
+    const [activeSection, setActiveSection] = useState("master");
+
     return (
         <section class="global-secq pt-50 pb-50 pt-xs-20 pt-sm-20 pb-sm-20 mt-30 mb-20 master-plan-section" id="master">
     <div class="container">
@@ -10,25 +14,28 @@ const MasterPlanSection = () => {
       </h4>
       <br/>
       <div class="buttons text-center pb-4">
-        <button id="phase1" class="btn btn-light btn-is-active px-4 py-2 mx-2">
+        <button id="phase1" class={`btn btn-light px-4 py-2 mx-2 ${activeSection === "master" ? "btn-is-active" : ""}`}
+            onClick={() => setActiveSection("master")}>
           <h6 class="color-gold wow fadeInDown mont-reg text-center m-auto ani-fade-in">
             <strong> Master Plan </strong>
           </h6>
         </button>
-        <button id="phase2" class="btn btn-light px-4 py-2 mx-2">
+        <button id="phase2" class={`btn btn-light px-4 py-2 mx-2 ${activeSection === "floor" ? "btn-is-active" : ""}`}
+            onClick={() => setActiveSection("floor")}>
           <h6 class="color-gold wow fadeInDown mont-reg text-center m-auto ani-fade-in">
             <strong> Floor Plan </strong>
           </h6>
         </button>
       </div>
       <div id="floors">
-        <div class="row disp-flex" id="p1">
+      {activeSection === "master" && (
+        <div class="row disp-none" id="p1">
           <div class="col-lg-2 col-md-6 col-12"></div>
           <div class="col-lg-8 col-md-8 col-12">
             <div class="amenities-gallery mg-mb">
-              <img src="img/masterplan19.jpg" class="w-100" />
+              <img src="images/amenities/masterplan19.jpg" class="w-100" />
 
-              <a data-fancybox="lifestyle" href="img/masterplan19.jpg" class="l-box lifestyle-img-w22">
+              <a data-fancybox="lifestyle" href="images/amenities/masterplan19.jpg" class="l-box lifestyle-img-w22">
                 <div class="ami-overlay"></div>
               </a>
             </div>
@@ -39,12 +46,15 @@ const MasterPlanSection = () => {
           </div>
           <div class="col-lg-2 col-md-6 col-12"></div>
         </div>
-        <div class="row fadeInDown disp-none" id="p2">
+         )}
+
+      {activeSection === "floor" && (
+        <div class="row fadeInDown disp-flex" id="p2">
           <div class="col-lg-4 col-md-6 col-12">
             <div class="amenities-gallery mg-mb">
-              <img src="img/3 BHk (Type 1) (3)-01.jpg" class="w-100" />
+              <img src="images/amenities/3 BHk (Type 1) (3)-01.jpg" class="w-100" />
 
-              <a data-fancybox="lifestyle" href="img/3 BHk (Type 1) (3)-01.jpg" class="l-box lifestyle-img-w21">
+              <a data-fancybox="lifestyle" href="images/amenities/3 BHk (Type 1) (3)-01.jpg" class="l-box lifestyle-img-w21">
                 <div class="ami-overlay"></div>
               </a>
             </div>
@@ -55,9 +65,9 @@ const MasterPlanSection = () => {
 
           <div class="col-lg-4 col-md-6 col-12">
             <div class="amenities-gallery mg-mb">
-              <img src="img/3 BHk (Type 2) (3)-01.jpg" class="w-100" />
+              <img src="images/amenities/3 BHk (Type 2) (3)-01.jpg" class="w-100" />
 
-              <a data-fancybox="lifestyle" href="img/3 BHk (Type 2) (3)-01.jpg" class="l-box lifestyle-img-w21">
+              <a data-fancybox="lifestyle" href="images/amenities/3 BHk (Type 2) (3)-01.jpg" class="l-box lifestyle-img-w21">
                 <div class="ami-overlay"></div>
               </a>
             </div>
@@ -67,9 +77,9 @@ const MasterPlanSection = () => {
           </div>
           <div class="col-lg-4 col-md-6 col-12">
             <div class="amenities-gallery mg-mb">
-              <img src="img/4 BHk (1)-01 (3).jpg" class="w-100" />
+              <img src="images/amenities/4 BHk (1)-01 (3).jpg" class="w-100" />
 
-              <a data-fancybox="lifestyle" href="img/4 BHk (1)-01 (3).jpg" class="l-box lifestyle-img-w21">
+              <a data-fancybox="lifestyle" href="images/amenities/4 BHk (1)-01 (3).jpg" class="l-box lifestyle-img-w21">
                 <div class="ami-overlay"></div>
               </a>
             </div>
@@ -78,6 +88,7 @@ const MasterPlanSection = () => {
             </h6>
           </div>
         </div>
+      )}
       </div>
     </div>
   </section>
