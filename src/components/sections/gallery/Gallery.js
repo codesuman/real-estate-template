@@ -11,34 +11,25 @@ const Gallery = () => {
           </h4>
           <div class="row align-self-center galerystyle">
             <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD-KIADBWEV.jpg" alt=""><img src="images/HD-KIADBWEV.jpg" class="w-100" alt=""/></a>
+              <a href="images/Image2.jpg" alt=""><img src="images/Image2.jpg" class="w-100" alt=""/></a>
             </div>
             <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD - KIADB Commercial Front.jpg" alt=""><img src="images/HD - KIADB Commercial Front.jpg" class="w-100" alt=""/></a>
+              <a href="images/Image3.jpg" alt=""><img src="images/Image3.jpg" class="w-100" alt=""/></a>
             </div>
             <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD - KIADB Commercial1.jpg" alt=""><img src="images/HD - KIADB Commercial1.jpg" class="w-100" alt=""/></a>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD - KIADB Entry portal.jpg" alt=""><img src="images/HD - KIADB Entry portal.jpg" class="w-100" alt=""/></a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD - KIADB Playcourt.jpg" alt=""><img src="images/HD - KIADB Playcourt.jpg" class="w-100" alt=""/></a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD - KIADB Pool view (1).jpg" alt=""><img src="images/HD - KIADB Pool view (1).jpg" class="w-100" alt=""/></a>
+              <a href="images/Image4.jpg" alt=""><img src="images/Image4.jpg" class="w-100" alt=""/></a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/Shot_02 REV 2.jpg" alt=""><img src="images/Shot_02 REV 2.jpg" class="w-100" alt=""/></a>
+              <a href="images/Image5.jpg" alt=""><img src="images/Image5.jpg" class="w-100" alt=""/></a>
             </div>
             <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/Assetz_topplan-02.jpg" alt=""><img src="images/Assetz_topplan-02.jpg" class="w-100" alt=""/></a>
-            </div> 
-            <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
-              <a href="images/HD - KIADB Amphitheater.jpg" alt=""><img src="images/HD - KIADB Amphitheater.jpg" class="w-100" alt=""/></a>
+              <a href="images/Image6.jpg" alt=""><img src="images/Image6.jpg" class="w-100" alt=""/></a>
             </div>
+            <div class="col-lg-4 col-md-4 col-12 gallery-images-construction mb-10">
+              <a href="images/Image8.jpg" alt=""><img src="images/Image8.jpg" class="w-100" alt=""/></a>
+            </div>
+
           </div>
         </div>
       </div>
