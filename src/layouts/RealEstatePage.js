@@ -4,13 +4,15 @@ import HeroSlider from "../components/sections/hero/HeroSlider";
 import ProjectFeaturesSection from "../components/sections/project-features/ProjectFeaturesSection";
 import ConfigurationSection from "../components/sections/configuration/ConfigurationSection";
 import AmenitiesSection from "../components/sections/amenities/AmenitiesSection";
+import LocationSection from "../components/sections/location/LocationSection";
+
 import FooterSection from "../components/sections/footer/FooterSection";
 
 import RequestBrochureForm from "../components/forms/RequestBrochureForm";
 
 import useMediaQuery from "../util/UseMediaQuery";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const RealEstatePage = () => {
   const slidesForDesktop = [
@@ -24,6 +26,7 @@ const RealEstatePage = () => {
   ];
 
   const isMobile = useMediaQuery("(max-width: 768px)");
+  
 
   const [showModal, setShowModal] = useState(false);
 
@@ -31,7 +34,9 @@ const RealEstatePage = () => {
   const handleCloseModal = () => setShowModal(false);
 
   return (
+    
     <div className="font-sans">
+
       {/* Hero Section */}
       {/* Conditionally Render HeroSlider */}
       {isMobile ? (
@@ -40,22 +45,26 @@ const RealEstatePage = () => {
         <HeroSlider slides={slidesForDesktop} />
       )}
 
+
       {/* Project Features Section */}
       <ProjectFeaturesSection onRequestBrochure={handleOpenModal}/>
 
       {/* Configuration Section */}
-      <ConfigurationSection />
+      <ConfigurationSection onRequestBrochure={handleOpenModal}/>
       
       {/* Amenities Section */}
       <AmenitiesSection />
-      
+
+      {/* Location Section */}
+      <LocationSection onRequestBrochure={handleOpenModal}/>
+
       {/* Footer Section */}
       <FooterSection />
 
       {/* Sticky Button for Mobile View */}
       {isMobile && (
         <button
-          className="text-uppercase  sticky-bottom-btn"
+          className="text-uppercase  sticky-bottom-btn btn style={{background : 'ed323a'}}"
           onClick={handleOpenModal}
         >
           Enquire Now

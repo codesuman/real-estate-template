@@ -1,0 +1,38 @@
+.h-100 {
+  height: 100%;
+}
+
+.float-right {
+    float: right;
+}
+
+.acc-btn {
+    width: 100%;
+    text-align: left !important;
+}
+
+.acc-btn i {
+    float: right;
+}
+
+.location-map {
+    visibility: visible; 
+    animation-name: flipInX;
+}
+
+.location-nearby {
+    visibility: visible; 
+    animation-name: fadeInDown;
+}
+
+.btn-link {
+    font-size: 14px !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.submit-btn btn req-brochure{
+    background-color: ed323a;
+}
+
