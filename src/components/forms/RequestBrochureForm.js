@@ -8,11 +8,20 @@ const RequestBrochureForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    // Simulate form submission
-    console.log("Form Submitted", data);
-    // Redirect to success route
-    navigate("/success");
+  const onSubmit = (data, event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      navigate("/success");
+    })
+    .catch(error => alert(error));
   };
 
   return (
