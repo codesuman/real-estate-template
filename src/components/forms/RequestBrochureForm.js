@@ -76,9 +76,10 @@ const RequestBrochureForm = () => {
           className="form-control"
         >
           <option value="" disabled hidden>Select Configuration</option>
-          <option value="3 BHK - 1670 Sq.Ft. - 1.78 Cr">3 BHK - 1670 Sq.Ft. - 1.78 Cr</option>
-          <option value="3 BHK - 1785 Sq.Ft. - 1.90 Cr">3 BHK - 1785 Sq.Ft. - 1.90 Cr</option>
-          <option value="4 BHK - 2168 Sq.Ft. - 2.31 Cr">4 BHK - 2168 Sq.Ft. - 2.31 Cr</option>
+          <option value="2 BHK - 1,144 Sq.ft - 1.28 Cr*">2 BHK - 1,144 Sq.ft - 1.28 Cr*</option>
+          <option value="3 BHK - 1,336 Sq.ft - 1.5 Cr*">3 BHK - 1,336 Sq.ft - 1.5 Cr*</option>
+          <option value="3.5 BHK - 1,872 Sq.ft - 2.14 Cr*">3.5 BHK - 1,872 Sq.ft - 2.14 Cr*</option>
+          <option value="4 BHK - 2,553 Sq.ft - 2.88 Cr*">4 BHK - 2,553 Sq.ft - 2.88 Cr*</option>
         </select>
         {errors.configuration && <small className="text-danger">{errors.configuration.message}</small>}
       </div>

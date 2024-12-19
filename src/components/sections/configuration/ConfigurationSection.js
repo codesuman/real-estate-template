@@ -2,7 +2,7 @@ import React from 'react';
 import './ConfigurationSection.css'
 
 // https://codepen.io/sdhnik/pen/JdVaow
-const ConfigurationSection = () => {
+const ConfigurationSection = ({ onRequestBrochure }) => {
   return (
     <section class="pt-10 pb-20 pt-xs-10 pb-xs-20 pt-sm-10 pb-sm-20 overflow-hidden config-section">
       <div class="container">
@@ -12,56 +12,55 @@ const ConfigurationSection = () => {
               <div class="quiz-window-body">
                 <div class="gui-window-awards">
                   <ul class="guiz-awards-row guiz-awards-header">
-                    <li class="guiz-awards-header-star">&nbsp;</li>
-                    <li class="guiz-awards-header-title">TYPE</li>
-                    <li class="guiz-awards-header-track">AREA</li>
-                    <li class="guiz-awards-header-time">&nbsp;</li>
+                    <li class="guiz-awards-header-title">Type & Dimension's</li>
+                    <li class="guiz-awards-header-track">Price</li>
+                    <li class="guiz-awards-header-time">More Details</li>
                   </ul>
                   <ul class="guiz-awards-row guiz-awards-row-even">
-                    <li class="guiz-awards-star"><span class="star goldstar"></span></li>
-                    <li class="guiz-awards-title">EUPHORIA
-                      <div class="guiz-awards-subtitle">About EUPHORIA</div>
+                    
+                    <li class="guiz-awards-title">2 BHK
+                    <div class="guiz-awards-subtitle">1,144 Sq.ft</div>
                     </li>
-                    <li class="guiz-awards-track">2,400 SQ. FT.</li>
+                    <li class="guiz-awards-track">1.28 Cr*</li>
                     <li class="guiz-awards-time">
-                      <a href="javascript:void (0);" class="price-click">
-                        Know More
-                      </a>
+                    <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
+                      Enquire !
+                    </button>
                     </li>
                   </ul>
                   <ul class="guiz-awards-row">
-                    <li class="guiz-awards-star"><span class="star silverstar"></span></li>
-                    <li class="guiz-awards-title">THRILL
-                      <div class="guiz-awards-subtitle">About THRILL</div>
+                    <li class="guiz-awards-title">3 BHK
+                    <div class="guiz-awards-subtitle">1,336 Sq.ft - 1,735 Sq.ft</div>
                     </li>
-                    <li class="guiz-awards-track"><span class="null">1,500 SQ. FT.</span></li>
+                    <li class="guiz-awards-track"><span class="null">1.5 Cr* - 2.06 Cr*</span></li>
                     <li class="guiz-awards-time">
                       <span class="null">
-                        <a href="javascript:void (0);" class="price-click">
-                          Know More
-                        </a>
+                      <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
+                       Enquire !
+                      </button>
                       </span>
                     </li>
                   </ul>
                   <ul class="guiz-awards-row guiz-awards-row-even">
-                    <li class="guiz-awards-star"><span class="star bronzestar"></span></li>
-                    <li class="guiz-awards-title">ADRENALINE
-                      <div class="guiz-awards-subtitle">About ADRENALINE</div></li>
-                    <li class="guiz-awards-track">Other Sizes</li>
+                    <li class="guiz-awards-title">3.5BHK
+                    <div class="guiz-awards-subtitle">1,872 Sq.ft</div></li>
+                    <li class="guiz-awards-track"><span class="null">2.14 Cr*</span></li>
                     <li class="guiz-awards-time">
                       <span class="null">
-                        <a href="javascript:void (0);" class="price-click">
-                          Know More
-                        </a>
+                      <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
+                       Enquire !
+                      </button>
                       </span>
                     </li>
                   </ul>
                   <ul class="guiz-awards-row">
-                    <li class="guiz-awards-star"><span class="star rhodiumstar"></span></li>
-                    <li class="guiz-awards-title">TRANQUIL
-                      <div class="guiz-awards-subtitle">About TRANQUIL</div></li>
-                    <li class="guiz-awards-track"><span class="null">-</span></li>
-                    <li class="guiz-awards-time"><span class="null">Sold Out</span></li>
+                    <li class="guiz-awards-title">4 BHK + Staff
+                      <div class="guiz-awards-subtitle">2,553 Sq.ft</div></li>
+                    <li class="guiz-awards-track"><span class="null">2.88 Cr*</span></li>
+                    <li class="guiz-awards-time"><span class="null">
+                      <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
+                       Enquire !
+                      </button></span></li>
                   </ul>
                 </div>
               </div>
@@ -74,3 +73,4 @@ const ConfigurationSection = () => {
 };
 
 export default ConfigurationSection;
+ 
