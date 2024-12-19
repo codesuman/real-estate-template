@@ -64,7 +64,7 @@ const RealEstatePage = () => {
       {/* Sticky Button for Mobile View */}
       {isMobile && (
         <button
-          className="text-uppercase  sticky-bottom-btn btn style={{background : 'ed323a'}}"
+          className="text-uppercase sticky-bottom-btn btn"
           onClick={handleOpenModal}
         >
           Enquire Now

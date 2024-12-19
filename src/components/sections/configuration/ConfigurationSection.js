@@ -24,7 +24,7 @@ const ConfigurationSection = ({ onRequestBrochure }) => {
                     <li class="guiz-awards-track">1.28 Cr*</li>
                     <li class="guiz-awards-time">
                     <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
-                      Enquire !
+                      Enquire
                     </button>
                     </li>
                   </ul>
@@ -36,7 +36,7 @@ const ConfigurationSection = ({ onRequestBrochure }) => {
                     <li class="guiz-awards-time">
                       <span class="null">
                       <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
-                       Enquire !
+                       Enquire
                       </button>
                       </span>
                     </li>
@@ -48,7 +48,7 @@ const ConfigurationSection = ({ onRequestBrochure }) => {
                     <li class="guiz-awards-time">
                       <span class="null">
                       <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
-                       Enquire !
+                       Enquire
                       </button>
                       </span>
                     </li>
@@ -59,7 +59,7 @@ const ConfigurationSection = ({ onRequestBrochure }) => {
                     <li class="guiz-awards-track"><span class="null">2.88 Cr*</span></li>
                     <li class="guiz-awards-time"><span class="null">
                       <button onClick={onRequestBrochure} class="submit-btn btn req-brochure">
-                       Enquire !
+                       Enquire
                       </button></span></li>
                   </ul>
                 </div>

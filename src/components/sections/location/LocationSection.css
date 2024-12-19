@@ -15,6 +15,10 @@
     float: right;
 }
 
+.nik-acc-btn {
+    background-color: white, 
+}
+
 .location-map {
     visibility: visible; 
     animation-name: flipInX;
@@ -22,7 +26,7 @@
 
 .location-nearby {
     visibility: visible; 
-    animation-name: fadeInDown;
+    /* animation-name: fadeInDown; */
 }
 
 .btn-link {
@@ -31,8 +35,5 @@
     text-decoration: none !important;
     background-color: transparent !important;
     border-color: transparent !important;
-}
-.submit-btn btn req-brochure{
-    background-color: ed323a;
 }
 

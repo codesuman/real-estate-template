@@ -150,8 +150,7 @@
   width: auto;
   border: 1px solid #fff !important;
   cursor: pointer;
-  background-color: #ed212f !important;
-  /* background-color: #fff !important; */
+  background-color: #ed323a !important;
   color: #fff !important;
   font-weight: bold;
 }
@@ -162,7 +161,7 @@
   left: 0; /* Start from the left edge */
   width: 100%; /* Take the full width of the screen */
   z-index: 1000; /* Ensure it stays on top of other content */
-  background-color: #ed212f !important;
+  background-color: #ed323a !important;
   color: #fff !important; /* Text color */
   font-weight: bold;
   padding: 15px; /* Adjust padding for a better look */

@@ -4,6 +4,7 @@ import './LocationSection.css'
 class LocationCategory {
     constructor(name, locations) {
         this.name = name;
+        this.id = name.replace(/ +/g, "");
         this.locations = locations;
     }
 }
@@ -91,16 +92,16 @@ const LocationSection = ({ onRequestBrochure }) => {
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                     <button 
-                                                        class="accordion-button" style={{ backgroundColor: 'white', color: 'black' }}
+                                                        class="accordion-button nik-acc-btn" 
                                                         type="button" 
                                                         data-bs-toggle="collapse" 
-                                                        data-bs-target={`#collapse${locationCategory.name}`}
+                                                        data-bs-target={`#collapse${locationCategory.id}`}
                                                         aria-expanded={index === 0} // Set true for the first item
-                                                        aria-controls={`collapse${locationCategory.name}`}>
+                                                        aria-controls={`collapse${locationCategory.id}`}>
                                                         {locationCategory.name}
                                                     </button>
                                                 </h2>
-                                                <div id={`collapse${locationCategory.name}`} className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`} data-bs-parent="#accordionExample">
+                                                <div id={`collapse${locationCategory.id}`} className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`} data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul>
                                                             {
