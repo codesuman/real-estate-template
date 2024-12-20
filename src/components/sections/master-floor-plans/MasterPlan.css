@@ -1,0 +1,31 @@
+.master-plan-section {
+    overflow-x: hidden; 
+    background-color: #ed323a;
+}
+
+.ani-fade-in {
+    visibility: visible; 
+    animation-name: fadeInDown;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.lifestyle-img-w21 {
+    height: 2200px; 
+    width: 2100px;
+}
+
+.lifestyle-img-w22 {
+    height: 2200px; 
+    width: 2200px;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.disp-none {
+    display: none;
+}
