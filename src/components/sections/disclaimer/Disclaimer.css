@@ -1,0 +1,20 @@
+.align{
+    text-align: center;
+    font-size: 8px;
+    font-family: sans-serif;
+}
+[data-css="tve-u-16d62c918cc"] {
+    background-color:  rgb(255, 68, 0);
+    font-size: 8px;
+  }
+.bgcol{
+    background-color:  rgb(255, 68, 0);
+  }
+.outl{
+    outline: none;
+}
+.just{
+    text-align: justify;
+    font-size: 8px;
+    font-family: sans-serif;
+}
