@@ -1,29 +1,47 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-// import ReCAPTCHA from "react-google-recaptcha";
 
 import './RequestBrochureForm.css';
 
 const RequestBrochureForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-//   const [captchaVerified, setCaptchaVerified] = React.useState(false);
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    // if (!captchaVerified) {
-    //   alert("Please complete the CAPTCHA!");
-    //   return;
-    // }
+  const onSubmit = (data, event) => {
+    event.preventDefault();
 
-    // Simulate form submission
-    console.log("Form Submitted", data);
-    // Redirect to success route
-    navigate("/success");
+    const formData = new FormData(event.target);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      navigate("/success");
+    })
+    .catch(error => alert(error));
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form
+      name="request-brochure"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit(onSubmit)} // React Hook Form handles submission
+    >
+      {/* Hidden input for Netlify form name */}
+      <input type="hidden" name="form-name" value="request-brochure" />
+
+      {/* Honeypot field for spam protection */}
+      <div style={{ display: "none" }}>
+        <label>
+          Don’t fill this out: <input name="bot-field" />
+        </label>
+      </div>
+      
       {/* Name Field */}
       <div className="form-group custom-fg">
         <input
@@ -83,14 +101,6 @@ const RequestBrochureForm = () => {
         </select>
         {errors.configuration && <small className="text-danger">{errors.configuration.message}</small>}
       </div>
-
-      {/* reCAPTCHA */}
-      {/* <div className="form-group custom-fg">
-        <ReCAPTCHA
-          sitekey="your-site-key"
-          onChange={() => setCaptchaVerified(true)}
-        />
-      </div> */}
 
       {/* Submit Button */}
       <button type="submit" className="btn btn-primary w-100 req-brochure">Submit</button>

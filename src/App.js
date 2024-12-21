@@ -34,7 +34,7 @@ const App = () => (
       <Route path="/" element={<RealEstatePage />} />
       <Route path="/request-brochure" element={<RequestBrochureForm />} />
       <Route path="/success" element={<SuccessPage />} />
-       <Route path="/terms-and-conditions" element={<TermsAndCondition/>}/>
+      <Route path="/terms-and-conditions" element={<TermsAndCondition/>}/>
       <Route path="/privacy-policy" element={<PrivacyPolicy/>}/> 
     </Routes>
   </Router>
