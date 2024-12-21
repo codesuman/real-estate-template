@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
     return (
@@ -6,15 +7,11 @@ const FooterSection = () => {
         <div className="container text-center">
         
           <p><span class="null">
-           <a href="/terms-and-conditions">
-                          T&C
-                        </a>
-                      </span>&nbsp;&nbsp;
-                      <span class="null">
-                        <a href="/privacy-policy">
-                          Privacy
-                        </a>
-                      </span>&nbsp;&nbsp;&copy;2024 Nikoo Homes Property Group. All rights reserved.</p>
+               <Link to="/terms-and-conditions">T&C</Link>
+              </span>&nbsp;&nbsp;
+              <span class="null">
+                <Link to="/privacy-policy">Privacy</Link>
+              </span>&nbsp;&nbsp;&copy;2024 Nikoo Homes Property Group. All rights reserved.</p>
         </div>
       </footer>
     )
