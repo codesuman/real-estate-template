@@ -61,13 +61,14 @@ const RealEstatePage = () => {
       {/* Location Section */}
       <LocationSection onRequestBrochure={handleOpenModal}/>
 
-      {/* Disclaimer Section */}
-      <Disclaimer />
       {/* MasterPlan Section */}
       <MasterPlanSection />
 
       {/* Gallery Section */}
       <Gallery />
+
+      {/* Disclaimer Section */}
+      <Disclaimer />
 
       {/* Footer Section */}
       <FooterSection />
