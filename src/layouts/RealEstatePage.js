@@ -5,6 +5,7 @@ import ProjectFeaturesSection from "../components/sections/project-features/Proj
 import ConfigurationSection from "../components/sections/configuration/ConfigurationSection";
 import AmenitiesSection from "../components/sections/amenities/AmenitiesSection";
 import LocationSection from "../components/sections/location/LocationSection";
+import Disclaimer from "../components/sections/disclaimer/Disclaimer";
 import Gallery from "../components/sections/gallery/Gallery";
 import MasterPlanSection from "../components/sections/master-floor-plans/MasterPlan";
 
@@ -65,6 +66,9 @@ const RealEstatePage = () => {
 
       {/* Gallery Section */}
       <Gallery />
+
+      {/* Disclaimer Section */}
+      <Disclaimer />
 
       {/* Footer Section */}
       <FooterSection />
