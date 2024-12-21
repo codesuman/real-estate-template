@@ -2,16 +2,16 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
     return (
-        <div class="row custom-row content" style={{margin:'auto'}}>
+        <div class="row custom-row content fs-12" style={{margin:'auto'}}>
         <div class="col-12">
-                <h1 class="sub-title">Privacy Policy</h1>
+                <h5 class="sub-title">Privacy Policy</h5>
                 
                 <p>This Privacy Policy governs the manner in which ROLT PVT LTD and its
                     subsidiaries, partners,
                     agents and affiliates collect, use, maintain and disclose information collected from users
                     of our website and microsite.</p>
                 
-                <h2>PERSONAL IDENTIFICATION INFORMATION :</h2>
+                <h5>PERSONAL IDENTIFICATION INFORMATION :</h5>
                 <p>We may collect personal identification information from Users in a variety of ways,
                     including, but not limited to, when
                     Users visit our site, subscribe to the newsletter, fill out a form, and in connection with
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
                     personal identification information, except that it may prevent them from engaging in
                     certain Site related activities.</p>
                 
-                <h2>NON-PERSONAL IDENTIFICATION INFORMATION :</h2>
+                <h5>NON-PERSONAL IDENTIFICATION INFORMATION :</h5>
                 <p>We may collect non-personal identification information about Users whenever they interact
                     with our Site. Non-personal
                     identification information may include the browser name, the type of computer and technical
@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
                     service providers utilized and
                     other similar information.</p>
                 
-                <h2>WEB BROWSER COOKIES:</h2>
+                <h5>WEB BROWSER COOKIES:</h5>
                 <p>Our Site may use "cookies" to enhance User experience. User's web browser places cookies on
                     their hard drive for
                     record-keeping purposes and sometimes to track information about them. User may choose to
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
                     not function properly. This is a standard operating procedure that is used across the
                     internet.</p>
                 
-                <h2>HOW WE USE COLLECTED INFORMATION:</h2>
+                <h5>HOW WE USE COLLECTED INFORMATION:</h5>
                 
                 <p>ROLT PVT LTD may collect and use User’s personal information for the
                     following purposes:</p>

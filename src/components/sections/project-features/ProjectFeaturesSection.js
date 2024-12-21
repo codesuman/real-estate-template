@@ -9,7 +9,7 @@ const ProjectFeaturesSection = ({ onRequestBrochure }) => {
           <div class="col-12">
             <div class="row mt-30">
               <div class="col-lg-7 align-self-center wow flipInX" style={{visibility: 'visible', animationName: 'flipInX'}}>
-                <img src="images/gallery4.jpg" alt="" class="w-100 mb-40" />
+                <img src="images/Image1.jpg" alt="" class="w-100 mb-40" />
               </div>
               <div class="col-lg-5 fadeIn wow fadeInDown" style={{visibility: 'visible', animationName: 'fadeInDown'}}>
                 <h4 class="mont-reg mt-10 fs-28 fs-xs-20 fs-sm-20 mb-30 mb-xs-10 mb-sm-10 text-uppercase">

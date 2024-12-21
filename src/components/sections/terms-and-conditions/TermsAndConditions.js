@@ -2,18 +2,18 @@ import React from 'react';
 
 const TermsAndCondition = () => {
     return (
-        <div class="row custom-row content" style={{margin:'auto'}}>
+        <div class="row custom-row content fs-12" style={{margin:'auto'}}>
             <div class="col-12">
-                <h1 class="sub-title">Terms</h1>
+                <h5 class="sub-title">Terms</h5>
                 
-                <h2>INTRODUCTION : </h2>
+                <h5>INTRODUCTION : </h5>
                 <p>Our customers' privacy is extremely important to us at <a href="https://www.nikoohoms.com">www.nikoohoms.com</a>. You can depend on
                     us to act responsibly and
                     maintain confidentiality of the information that you choose to provide us with. The
                     information that you provide will
                     help us to better understand your needs and enable us to serve you better.</p>
         
-                <h2>INFORMATION COLLECTED FROM YOU :</h2>
+                <h5>INFORMATION COLLECTED FROM YOU :</h5>
                 <p>To be able to obtain information about our products and services you are required to provide
                     us with a valid email ID,
                     your contact details. This enables us to provide you the relevant information whether by
@@ -40,13 +40,13 @@ const TermsAndCondition = () => {
                     be kept on record for us to
                     better understand your needs and requirements.</p>
             
-                <h2>STORAGE AND MAINTENANCE OF INFORMATION COLLECTED :</h2>
+                <h5>STORAGE AND MAINTENANCE OF INFORMATION COLLECTED :</h5>
                 <p>Although Rolt Group may store or track information about visitor, Rolt Group shall not
                     be obligated to do so and
                     may delete any information and records, in whole or in part, solely at its discretion.</p>
                 
 
-                <h2>USAGE OF THE INFORMATION COLLECTED :</h2>
+                <h5>USAGE OF THE INFORMATION COLLECTED :</h5>
                 <p>The information collected from our users / visitors is used mainly to enhance the end user
                     experience. The email and
                     other contact information provided may be used to send promotional offers, newsletter and
@@ -80,7 +80,7 @@ const TermsAndCondition = () => {
                     administrative investigation, in such cases this information will be shared with the
                     concerned authorities.</p>
                 
-                <h2>SITE SECURITY :</h2>
+                <h5>SITE SECURITY :</h5>
                 <p>Rolt Group has implemented adequate security measures to protect against any misuse, theft
                     or alteration of
                     information stored on the <a href="https://www.nikoohoms.com">www.nikoohoms.com</a> web site. The site
@@ -90,14 +90,14 @@ const TermsAndCondition = () => {
                     Rolt Group cannot be held liable for loss, theft or corruption of data maintained on the
                     site.</p>
                 
-                <h2>OPTIONS FOR PROMOTIONAL INFORMATION AND COMMUNICATION :</h2>
+                <h5>OPTIONS FOR PROMOTIONAL INFORMATION AND COMMUNICATION :</h5>
                 <p>Users reserve the right to opt-out of receiving any promotional or other communications from
                     Rolt Group or any of its
                     affiliates. Should you choose to opt out please do so by visiting the site, signing in and
                     then unchecking the receive
                     newsletter option.</p>
                 
-                <h2>GENERAL LIMITATION OF LIABILITY :</h2>
+                <h5>GENERAL LIMITATION OF LIABILITY :</h5>
                 <p>Please be advised that Rolt Group tries its best to collect data from authentic sources.
                     However, Rolt Group
                     cannot be held liable for any loss, monetary or otherwise, resulting from the usage and
