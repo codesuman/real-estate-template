@@ -23,19 +23,13 @@ const AmenitiesSection = () => {
           <div class="col-12 pt-20 pb-20 amenities-section-overlay mt-20 wow fadeIn mb-20">
             <div class="row align-self-center">
               {[
-                { name: "Futsal Court", icon: "images/amenities/Icon-01.jpg" },
-                { name: "Basketball Court", icon: "images/amenities/Icon-02.jpg" },
-                { name: "Tennis Court", icon: "images/amenities/Icon-03.jpg" },
-                { name: "Box Cricket", icon: "images/amenities/Icon-04.jpg" },
-                { name: "Futsal Court", icon: "images/amenities/Icon-01.jpg" },
-                { name: "Basketball Court", icon: "images/amenities/Icon-02.jpg" },
-                { name: "Tennis Court", icon: "images/amenities/Icon-03.jpg" },
-                { name: "Box Cricket", icon: "images/amenities/Icon-04.jpg" },
-                { name: "Futsal Court", icon: "images/amenities/Icon-01.jpg" },
-                { name: "Basketball Court", icon: "images/amenities/Icon-02.jpg" },
-                { name: "Tennis Court", icon: "images/amenities/Icon-03.jpg" },
-                { name: "Box Cricket", icon: "images/amenities/Icon-04.jpg" }
-              ].map((amenity) => (
+                { name: "Gymnasium", icon: "images/amenities/Icon-01.png" },
+                { name: "Retail Store", icon: "images/amenities/Icon-02.png" },
+                { name: "Tennis Court", icon: "images/amenities/Icon-03.png" },
+                { name: "Kids Play Area", icon: "images/amenities/Icon-04.png" },
+                { name: "Mini Theatre", icon: "images/amenities/Icon-05.png" },
+                { name: "Jogging Track", icon: "images/amenities/Icon-06.png" }
+               ].map((amenity) => (
                 <div class="col-lg-2 col-md-2 col-6 align-self-center wow slideInUp pt-20" data-wow-delay="0.2s" >
                   <img class="center" width="60px" src={amenity.icon} alt={amenity.name}/>
                   <h6 class="text-center mt-2 fs-14">{amenity.name}</h6>
