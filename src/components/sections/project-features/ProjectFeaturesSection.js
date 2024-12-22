@@ -17,7 +17,6 @@ const ProjectFeaturesSection = ({ onRequestBrochure }) => {
                 </h4>
                 <ul class="list-unstyled custom-bullet Museo-normal fs-16 fs-xs-14 fs-sm-14">
                   <li class="color-white">Large Living Balconies</li>
-                  <li class="color-white">74% Open Space</li>
                   <li class="color-white">Just 10 mins aways from major prime locations</li>
                   <li class="color-white">25+ Indoor &amp; Outdoor Amenities</li>
                   <li class="color-white">2.5 Acres of Amenities and a Clubhouse </li>
