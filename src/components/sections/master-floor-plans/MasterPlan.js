@@ -33,9 +33,9 @@ const MasterPlanSection = () => {
           <div class="col-lg-2 col-md-6 col-12"></div>
           <div class="col-lg-8 col-md-8 col-12">
             <div class="amenities-gallery mg-mb">
-              <img src="images/amenities/masterplan19.jpg" class="w-100" />
+              <img src="images/amenities/masterplan.jpg" class="w-100" />
 
-              <a data-fancybox="lifestyle" href="images/amenities/masterplan19.jpg" class="l-box lifestyle-img-w22">
+              <a data-fancybox="lifestyle" href="images/amenities/masterplan.jpg" class="l-box lifestyle-img-w22">
                 <div class="ami-overlay"></div>
               </a>
             </div>
