@@ -19,13 +19,13 @@ import useMediaQuery from "../util/UseMediaQuery";
 
 const RealEstatePage = () => {
   const slidesForDesktop = [
-    { path: "/images/Offer-LP-05.jpg", name: "Offer Slide 1" },
-    { path: "/images/LP-03.jpg", name: "Offer Slide 2" }
+    { path: "/images/Banner_D_01.jpg", name: "Offer Slide 1" },
+    { path: "/images/Banner_D_02.jpg", name: "Offer Slide 2" }
   ];
 
   const slidesForMobile = [
-    { path: "/images/Offer-LP-06.jpg", name: "Offer Slide 1" },
-    { path: "/images/LP-04.jpg", name: "Offer Slide 2" }
+    { path: "/images/Banner_M_01.jpg", name: "Offer Slide 1" },
+    { path: "/images/Banner_M_02.jpg", name: "Offer Slide 2" }
   ];
 
   const isMobile = useMediaQuery("(max-width: 768px)");
